@@ -10,6 +10,16 @@ body {
   padding: 0;
 }
 
+html {
+  scroll-padding-top: var(--header-h);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   font-family: var(--font-body);
   font-size: var(--fs-base);
