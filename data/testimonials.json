@@ -1,0 +1,32 @@
+[
+  {
+    "rating": 5,
+    "quote": "Phòng bé không còn mùi sơn, bé ngủ sâu hơn hẳn. Tôi yên tâm khi bé bò trên sàn cả ngày.",
+    "name": "Nguyễn Hoài An",
+    "role": "Mẹ bé 14 tháng — TP.HCM"
+  },
+  {
+    "rating": 5,
+    "quote": "Bé nhà tôi thích vẽ lên tường, giờ thì thoả sức mà không lo phá. Đúng là khoản đầu tư đáng giá.",
+    "name": "Trần Minh Khôi",
+    "role": "Bố bé 4 tuổi — Hà Nội"
+  },
+  {
+    "rating": 5,
+    "quote": "Tư vấn rất tận tâm, đội thi công sạch sẽ, không để lại mùi. Sau 2 năm tường vẫn đẹp như mới.",
+    "name": "Lê Thị Hương",
+    "role": "Mẹ hai bé — Đà Nẵng"
+  },
+  {
+    "rating": 5,
+    "quote": "Màu sắc Japandi làm căn phòng trở nên yên bình. Bé bình tĩnh hơn vào giờ đi ngủ.",
+    "name": "Phạm Quốc Tuấn",
+    "role": "Bố bé 2 tuổi — TP.HCM"
+  },
+  {
+    "rating": 5,
+    "quote": "Tôi từng dị ứng mùi sơn nên rất lo. OneCoat khác hẳn — không mùi khó chịu, an toàn cả cho thai kỳ.",
+    "name": "Đặng Thu Trang",
+    "role": "Mẹ đang mang thai — Cần Thơ"
+  }
+]

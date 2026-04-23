@@ -1,0 +1,46 @@
+[
+  {
+    "id": "ho-hap",
+    "tab": "Hô hấp",
+    "eyebrow": "Giải pháp",
+    "title": "OneCoat for Kids",
+    "desc": "Phòng biết thở, lớn lên cùng bé từ 0 đến 6 tuổi.",
+    "actions": [
+      { "label": "Tìm hiểu", "variant": "outline", "href": "#" },
+      { "label": "Tìm hiểu", "variant": "link", "href": "#" }
+    ]
+  },
+  {
+    "id": "sang-tao",
+    "tab": "Sáng tạo",
+    "eyebrow": "Sức khỏe",
+    "title": "Bảo vệ mỗi hơi thở của bé",
+    "desc": "Keisoudo từ Nhật Bản hấp thụ những khí độc hại mà sơn thông thường phát tán. Nó là lá phổi của phòng, giúp không khí luôn sạch sẽ mỗi ngày.",
+    "actions": [
+      { "label": "Tìm hiểu", "variant": "outline", "href": "#" },
+      { "label": "Khám", "variant": "link", "href": "#" }
+    ]
+  },
+  {
+    "id": "ben-vung",
+    "tab": "Bền vững",
+    "eyebrow": "Sáng tạo",
+    "title": "Lá phổi của phòng biết thở",
+    "desc": "Chalkboard cho phép bé vẽ, viết, và học hỏi thông qua chơi đùa. Tường trở thành công cụ sáng tạo, nơi tưởng tượng không có giới hạn.",
+    "actions": [
+      { "label": "Tìm", "variant": "outline", "href": "#" },
+      { "label": "Khám", "variant": "link", "href": "#" }
+    ]
+  },
+  {
+    "id": "phat-trien",
+    "tab": "Phát triển",
+    "eyebrow": "Phát triển",
+    "title": "Tường cho sáng tạo và học tập",
+    "desc": "Dura-Poxy chịu đựng những năm tháng chơi đùa, bám dính, và vết bẩn. Bé có thể là chính mình mà không lo lắng về những vết xước.",
+    "actions": [
+      { "label": "Khám", "variant": "outline", "href": "#" },
+      { "label": "Tìm", "variant": "link", "href": "#" }
+    ]
+  }
+]

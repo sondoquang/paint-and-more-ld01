@@ -1,0 +1,264 @@
+.section-2col {
+  background: #fff;
+}
+
+.section-2col .section-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(32px, 4vw, 80px);
+  align-items: center;
+}
+
+.section-2col.is-reverse .section-2col__media {
+  order: 2;
+}
+
+.section-2col__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.section-2col__eyebrow {
+  font-size: var(--fs-base);
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.section-2col__title {
+  font-size: clamp(26px, 2.4vw, 40px);
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0;
+  max-width: 500px;
+}
+
+.section-2col__desc {
+  font-size: clamp(15px, 1.05vw, 17px);
+  line-height: 1.6;
+  color: var(--muted);
+  margin: 0;
+  max-width: 520px;
+}
+
+.section-2col__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-3);
+}
+
+.investment-features {
+  display: flex;
+  flex-direction: column;
+  margin-top: var(--space-3);
+}
+
+.investment-feature {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding-block: var(--space-5);
+  border-bottom: 1px solid var(--border);
+}
+
+.investment-feature:first-child {
+  padding-top: 0;
+}
+
+.investment-feature__title {
+  font-size: clamp(18px, 1.4vw, 22px);
+  line-height: 1.3;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0;
+}
+
+.investment-feature__desc {
+  font-size: var(--fs-md);
+  line-height: 1.55;
+  color: var(--muted);
+  margin: 0;
+}
+
+.investment-section .section-2col__media .placeholder-img {
+  --img-ratio: 1 / 1;
+}
+
+.section-2col__media .placeholder-img {
+  --img-ratio: 4 / 3;
+}
+
+.voc-section {
+  background: #fff;
+}
+
+.voc-tabs {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding: 6px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: clamp(40px, 5vw, 72px);
+}
+
+.voc-tab {
+  padding: 8px 18px;
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-base);
+  font-weight: 500;
+  color: var(--muted);
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: color 0.15s var(--ease), border-color 0.15s var(--ease),
+    background-color 0.15s var(--ease);
+}
+
+.voc-tab:hover {
+  color: var(--ink);
+}
+
+.voc-tab.is-active {
+  color: var(--ink);
+  border-color: var(--border-strong);
+  background: #fff;
+}
+
+.voc-panel {
+  display: block;
+}
+
+.voc-item {
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(32px, 4vw, 80px);
+  align-items: center;
+}
+
+.voc-item.is-active {
+  display: grid;
+}
+
+.japandi-section .section-2col__media {
+  align-self: stretch;
+}
+
+.japandi-collage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  max-width: 560px;
+  margin-inline: auto;
+}
+
+.japandi-collage .placeholder-img {
+  position: absolute;
+  margin: 0;
+}
+
+.japandi-collage .japandi-collage__item--main {
+  top: 0;
+  left: 18%;
+  width: 70%;
+  --img-ratio: 3 / 4;
+  z-index: 1;
+  background: #e5e7eb;
+}
+
+.japandi-collage .japandi-collage__item--top {
+  top: 14%;
+  right: 0;
+  width: 34%;
+  --img-ratio: 1 / 1;
+  z-index: 2;
+}
+
+.japandi-collage .japandi-collage__item--bottom {
+  bottom: 4%;
+  left: 0;
+  width: 42%;
+  --img-ratio: 5 / 4;
+  z-index: 2;
+}
+
+@media (max-width: 767px) {
+  .section-2col .section-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .section-2col.is-reverse .section-2col__media {
+    order: 0;
+  }
+
+  .section-2col__title {
+    font-size: 24px;
+  }
+
+  .section-2col__desc {
+    font-size: 15px;
+  }
+
+  .voc-tabs {
+    display: none;
+  }
+
+  .voc-panel {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(48px, 9vw, 72px);
+  }
+
+  .voc-item,
+  .voc-item.is-active {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .japandi-collage {
+    max-width: 360px;
+    aspect-ratio: 1 / 1.1;
+  }
+
+  .investment-section .section-2col__body {
+    display: contents;
+  }
+
+  .investment-section .section-container {
+    grid-template-areas:
+      "eyebrow"
+      "title"
+      "desc"
+      "media"
+      "features"
+      "actions";
+  }
+
+  .investment-section .section-2col__eyebrow {
+    grid-area: eyebrow;
+  }
+
+  .investment-section .section-2col__title {
+    grid-area: title;
+  }
+
+  .investment-section .section-2col__desc {
+    grid-area: desc;
+  }
+
+  .investment-section .section-2col__media {
+    grid-area: media;
+  }
+
+  .investment-section .investment-features {
+    grid-area: features;
+  }
+
+  .investment-section .section-2col__actions {
+    grid-area: actions;
+  }
+}
