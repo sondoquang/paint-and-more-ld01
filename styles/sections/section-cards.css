@@ -46,7 +46,7 @@
 }
 
 .card__link::after {
-  content: "→";
+  content: "\2192";
   transition: transform 0.2s var(--ease);
 }
 

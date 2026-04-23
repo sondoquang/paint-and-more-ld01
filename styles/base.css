@@ -113,7 +113,7 @@ img, svg {
   border-color: transparent;
 }
 .btn-link::after {
-  content: "›";
+  content: "\203A";
   font-size: 18px;
   line-height: 1;
   transition: transform 0.2s var(--ease);
