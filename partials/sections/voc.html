@@ -1,7 +1,60 @@
-<section class="section voc-section" aria-labelledby="voc-heading">
+<section
+  id="giai-phap-son-an-toan"
+  class="section voc-section"
+  aria-labelledby="voc-heading"
+>
   <div class="section-container">
-    <h2 id="voc-heading" class="visually-hidden">Phòng biết thở</h2>
-    <div class="voc-tabs" role="tablist" aria-label="Chủ đề phòng bé" data-voc-tabs></div>
-    <div class="voc-panel" data-voc-panel></div>
+    <div class="section-head">
+      <span class="section-eyebrow">Giải pháp</span>
+      <h2 id="voc-heading" class="section-title">Giải pháp sơn an toàn cho phòng em bé</h2>
+      <p class="section-lead">
+        Nội dung quan trọng về không khí sạch, mùi sơn, sáng tạo và độ bền được render sẵn trong
+        HTML để người dùng lẫn công cụ tìm kiếm đều đọc được ngay.
+      </p>
+    </div>
+
+    <div class="voc-tabs" role="tablist" aria-label="Giải pháp nổi bật cho phòng bé" data-voc-tabs>
+      {{#each voc}}
+      <button
+        type="button"
+        role="tab"
+        class="voc-tab{{#if isActive}} is-active{{/if}}"
+        data-voc-tab="{{id}}"
+        aria-selected="{{#if isActive}}true{{else}}false{{/if}}"
+      >
+        {{tab}}
+      </button>
+      {{/each}}
+    </div>
+
+    <div class="voc-panel" data-voc-panel>
+      {{#each voc}}
+      <article
+        class="voc-item{{#if isActive}} is-active{{/if}}"
+        data-voc-item="{{id}}"
+        {{#unless isActive}}hidden{{/unless}}
+      >
+        <div class="section-2col__body">
+          <span class="section-2col__eyebrow">{{eyebrow}}</span>
+          <h3 class="section-2col__title">{{title}}</h3>
+          <p class="section-2col__desc">{{desc}}</p>
+          <div class="section-2col__actions">
+            {{#each actions}}
+            <a class="{{className}}" href="{{href}}">{{label}}</a>
+            {{/each}}
+          </div>
+        </div>
+        <div class="section-2col__media">
+          <div class="placeholder-img" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="3" y="5" width="18" height="14" rx="2" />
+              <circle cx="9" cy="11" r="2" />
+              <path d="M3 17 L9 12 L14 15 L21 9" />
+            </svg>
+          </div>
+        </div>
+      </article>
+      {{/each}}
+    </div>
   </div>
 </section>

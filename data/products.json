@@ -1,20 +1,26 @@
 [
   {
     "name": "OneCoat for Kids",
-    "desc": "Sơn tường chuyên biệt, không VOC, công thức Keisoudo từ Nhật Bản.",
-    "price": "4.990.000đ",
-    "tag": "Best seller"
+    "desc": "Giải pháp sơn an toàn cho phòng em bé với công thức gốc nước, không VOC và phù hợp khu ngủ của trẻ nhỏ.",
+    "price": "Từ 4.900.000đ / phòng",
+    "tag": "Bán chạy",
+    "cta": "Xem giải pháp sơn an toàn",
+    "href": "#giai-phap-son-an-toan"
   },
   {
     "name": "Chalkboard Zone",
-    "desc": "Lớp phủ bảng vẽ — để bé thoả sức sáng tạo, dễ lau sạch.",
-    "price": "2.490.000đ",
-    "tag": "Mới"
+    "desc": "Bề mặt bảng vẽ dễ lau cho góc sáng tạo, giúp bé học và chơi mà vẫn giữ phòng gọn gàng.",
+    "price": "Từ 2.490.000đ / khu vực",
+    "tag": "Sáng tạo",
+    "cta": "Khám phá góc vẽ cho bé",
+    "href": "#cong-nghe-son-an-toan"
   },
   {
     "name": "Dura-Poxy Shield",
-    "desc": "Lớp bảo vệ bề mặt chịu lực, chống trầy xước cho khu vực chơi.",
-    "price": "3.290.000đ",
-    "tag": null
+    "desc": "Lớp phủ bền cho tường khu vui chơi, hạn chế trầy xước và hỗ trợ vệ sinh hằng ngày.",
+    "price": "Từ 3.290.000đ / khu vực",
+    "tag": "Bền bỉ",
+    "cta": "Tìm hiểu lớp phủ bền",
+    "href": "#gia-tri-dau-tu"
   }
 ]

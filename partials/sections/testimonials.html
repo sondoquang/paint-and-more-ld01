@@ -1,9 +1,16 @@
-<section class="section testimonials-section" aria-labelledby="testimonials-heading">
+<section
+  id="danh-gia-gia-dinh"
+  class="section testimonials-section"
+  aria-labelledby="testimonials-heading"
+>
   <div class="section-container">
     <div class="testimonials-head">
       <div class="section-head">
         <span class="section-eyebrow">Đánh giá</span>
         <h2 id="testimonials-heading" class="section-title">Những gia đình tin tưởng</h2>
+        <p class="section-lead">
+          Phản hồi thực tế từ các gia đình đã chọn giải pháp sơn an toàn cho phòng em bé.
+        </p>
       </div>
       <div class="testimonials-nav">
         <button type="button" class="btn-arrow" data-testimonial-prev aria-label="Trước">
@@ -22,7 +29,21 @@
     </div>
 
     <div class="testimonials-viewport">
-      <ul class="testimonials-track" data-testimonials aria-live="polite"></ul>
+      <ul class="testimonials-track" data-testimonials aria-live="polite">
+        {{#each testimonials}}
+        <li class="testimonial-card">
+          <span class="testimonial-stars" aria-label="{{rating}}/5 sao">{{stars}}</span>
+          <p class="testimonial-quote">{{quote}}</p>
+          <div class="testimonial-author">
+            <span class="testimonial-avatar" aria-hidden="true"></span>
+            <span>
+              <span class="testimonial-name">{{name}}</span><br />
+              <span class="testimonial-role">{{role}}</span>
+            </span>
+          </div>
+        </li>
+        {{/each}}
+      </ul>
     </div>
   </div>
 </section>

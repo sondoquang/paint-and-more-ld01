@@ -14,7 +14,7 @@ function renderCard(p) {
     <h3 class="card__title">${p.name}${p.tag ? ` <span class="tag">${p.tag}</span>` : ''}</h3>
     <p class="card__desc">${p.desc}</p>
     <p class="product-card__price">${p.price}</p>
-    <a class="card__link" href="#">Xem chi tiết</a>
+    <a class="card__link" href="${p.href || '#san-pham-son-an-toan'}">${p.cta || 'Xem chi tiết'}</a>
   `;
   return li;
 }
@@ -22,5 +22,6 @@ function renderCard(p) {
 export function initProducts() {
   const root = document.querySelector('[data-products]');
   if (!root) return;
+  if (root.children.length) return;
   data.forEach((p) => root.appendChild(renderCard(p)));
 }
