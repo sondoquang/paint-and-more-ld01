@@ -1,4 +1,8 @@
-<section class="section section-cards pricing-section" aria-labelledby="pricing-heading">
+<section
+  id="bang-gia-phong-be"
+  class="section section-cards pricing-section"
+  aria-labelledby="pricing-heading"
+>
   <div class="section-container">
     <div class="pricing-head">
       <div class="pricing-head__intro">
@@ -10,11 +14,44 @@
         </p>
       </div>
       <div class="pricing-toggle" role="tablist" aria-label="Diện tích phòng">
-        <button type="button" class="is-active" data-size="r12" aria-selected="true">Phòng 12m²</button>
-        <button type="button" data-size="r18" aria-selected="false">Phòng 18m²</button>
+        <button type="button" class="pricing-toggle__btn is-active" data-size="r12" aria-selected="true">Phòng 12m²</button>
+        <button type="button" class="pricing-toggle__btn" data-size="r18" aria-selected="false">Phòng 18m²</button>
       </div>
     </div>
 
-    <ul class="pricing-grid" data-pricing></ul>
+    <ul class="pricing-grid" data-pricing>
+      {{#each pricing}}
+      <li class="card pricing-card">
+        <header class="pricing-card__head">
+          <h3 class="pricing-card__name">{{name}}</h3>
+          <span class="pricing-card__icon" aria-hidden="true">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M3 7.5 L12 3 L21 7.5 L21 16.5 L12 21 L3 16.5 Z" />
+              <path d="M3 7.5 L12 12 L21 7.5" />
+              <path d="M12 12 L12 21" />
+            </svg>
+          </span>
+        </header>
+        <p class="pricing-card__price">
+          <span class="pricing-card__amount">{{price.r12}}</span>
+          <span class="pricing-card__unit">/mo</span>
+        </p>
+        <p class="pricing-card__desc">{{desc.r12}}</p>
+        <ul class="pricing-card__features">
+          {{#each features}}
+          <li>{{this}}</li>
+          {{/each}}
+        </ul>
+        <a class="btn pricing-card__cta" href="#lien-he-tu-van">{{cta}}</a>
+      </li>
+      {{/each}}
+    </ul>
   </div>
 </section>

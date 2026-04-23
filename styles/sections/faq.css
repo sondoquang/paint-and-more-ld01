@@ -57,7 +57,7 @@
 }
 
 .faq-item[open] summary::after {
-  content: "−";
+  content: "\2212";
 }
 
 .faq-answer {

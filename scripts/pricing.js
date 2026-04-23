@@ -20,11 +20,12 @@ function renderCard(p, size) {
       <span class="pricing-card__icon" aria-hidden="true">${CUBE_ICON}</span>
     </header>
     <p class="pricing-card__price">
-      <span class="pricing-card__amount">$${price}</span><span class="pricing-card__unit">/mo</span>
+      <span class="pricing-card__amount">${price}</span>
+      <span class="pricing-card__unit">/mo</span>
     </p>
     <p class="pricing-card__desc">${desc}</p>
     <ul class="pricing-card__features">${features}</ul>
-    <a class="btn pricing-card__cta" href="#">${p.cta}</a>
+    <a class="btn pricing-card__cta" href="#lien-he-tu-van">${p.cta}</a>
   `;
   return li;
 }

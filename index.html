@@ -3,8 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Giải pháp sơn an toàn cho phòng em bé với công thức không VOC, ít mùi, hỗ trợ không khí sạch và không gian sống lành mạnh cho trẻ nhỏ."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://paint-and-more-ld01.vercel.app/" />
     <link rel="icon" type="image/svg+xml" href="/img/logo-paint-and-more.svg" />
-    <title>OneCoat for Kids — Trang chủ</title>
+    <title>Sơn an toàn cho phòng em bé | OneCoat for Kids</title>
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="OneCoat for Kids" />
+    <meta property="og:title" content="Sơn an toàn cho phòng em bé | OneCoat for Kids" />
+    <meta
+      property="og:description"
+      content="Giải pháp sơn an toàn cho phòng em bé với công thức không VOC, ít mùi, hỗ trợ không khí sạch và không gian sống lành mạnh cho trẻ nhỏ."
+    />
+    <meta property="og:url" content="https://paint-and-more-ld01.vercel.app/" />
+    <meta
+      property="og:image"
+      content="https://paint-and-more-ld01.vercel.app/img/hanh-trinh-cua-be.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Sơn an toàn cho phòng em bé | OneCoat for Kids"
+    />
+    <meta
+      name="twitter:description"
+      content="Giải pháp sơn an toàn cho phòng em bé với công thức không VOC, ít mùi, hỗ trợ không khí sạch và không gian sống lành mạnh cho trẻ nhỏ."
+    />
+    <meta
+      name="twitter:image"
+      content="https://paint-and-more-ld01.vercel.app/img/hanh-trinh-cua-be.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Không gian phòng trẻ em an toàn, sáng tạo và thân thiện với sức khỏe"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,24 +48,89 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/main.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "OneCoat for Kids",
+        "url": "https://paint-and-more-ld01.vercel.app/",
+        "logo": "https://paint-and-more-ld01.vercel.app/img/logo-paint-and-more.svg",
+        "image": "https://paint-and-more-ld01.vercel.app/img/hanh-trinh-cua-be.png",
+        "email": "hello@onecoatforkids.vn",
+        "telephone": "+84-28-3822-5555",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Đường Nguyễn Huệ, Quận 1",
+          "addressLocality": "Hồ Chí Minh",
+          "addressCountry": "VN"
+        }
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Sơn có thật sự an toàn cho trẻ sơ sinh không?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "OneCoat for Kids được chứng nhận không VOC, không formaldehyde, không chì. Công thức gốc nước an toàn cho trẻ sơ sinh, phụ nữ mang thai và người dị ứng."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Phòng bé đã sơn rồi có sơn lại được không?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hoàn toàn được. Đội thi công sẽ lau sạch bề mặt cũ, chỉ cần một lớp OneCoat phủ đều và có thể sử dụng phòng sau khoảng 24 giờ."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Sau bao lâu thì bé có thể vào phòng?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Khoảng 24 giờ sau khi sơn xong. Vì không có VOC và mùi gắt, bé có thể quay lại phòng khi lớp sơn đã khô hoàn toàn."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Có bảo hành không?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Có. Gói Tiêu chuẩn bảo hành 2 năm, gói Cao cấp bảo hành 5 năm và có kiểm tra định kỳ miễn phí tùy dịch vụ bạn chọn."
+            }
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body>
     {{> header }}
 
     <main class="site-main">
-      {{> sections/hero }} {{> sections/timeline }} {{> sections/dangers }} {{>
-      sections/voc }}
+      {{> sections/hero }}
+      {{> sections/timeline }}
+      {{> sections/dangers }}
+      {{> sections/voc }}
       <!-- {{> sections/onecoat-intro }} -->
-      <!-- {{> sections/health }} 
+      <!-- {{> sections/health }}
       {{> sections/lungs }} -->
-      <!-- {{> sections/creativity }}  -->
-      {{> sections/world-choices }} {{> sections/japandi }} {{>
-      sections/investment }}
+      <!-- {{> sections/creativity }} -->
+      {{> sections/world-choices }}
+      {{> sections/japandi }}
+      {{> sections/investment }}
       <!-- {{> sections/product-detail }} -->
-      {{> sections/quote }} {{> sections/start-journey }} {{>
-      sections/testimonials }} {{> sections/pricing }} {{> sections/products }}
-      {{> sections/stats }} {{> sections/faq }}
+      {{> sections/quote }}
+      {{> sections/start-journey }}
+      {{> sections/testimonials }}
+      {{> sections/pricing }}
+      {{> sections/products }}
+      {{> sections/stats }}
+      {{> sections/faq }}
     </main>
 
     {{> footer }}

@@ -28,7 +28,9 @@ export function initTestimonials() {
   const next = document.querySelector('[data-testimonial-next]');
   if (!track) return;
 
-  data.forEach((t) => track.appendChild(renderCard(t)));
+  if (!track.children.length) {
+    data.forEach((t) => track.appendChild(renderCard(t)));
+  }
 
   let index = 0;
 

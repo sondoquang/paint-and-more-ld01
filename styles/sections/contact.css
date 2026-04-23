@@ -3,8 +3,10 @@
 }
 
 .contact-inner {
-  width: min(100% - 160px, 1280px);
+  width: 100%;
+  max-width: var(--container);
   margin-inline: auto;
+  padding-inline: var(--space-6);
   padding-block: clamp(84px, 7.5vw, 116px) clamp(48px, 5vw, 80px);
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(320px, 500px);
@@ -118,7 +120,7 @@
 
 @media (max-width: 767px) {
   .contact-inner {
-    width: calc(100% - 32px);
+    padding-inline: var(--space-4);
     grid-template-columns: 1fr;
     padding-block: 56px 40px;
     row-gap: 36px;
@@ -147,7 +149,6 @@
 
 @media (min-width: 768px) and (max-width: 1180px) {
   .contact-inner {
-    width: calc(100% - 64px);
     grid-template-columns: minmax(0, 1fr) minmax(280px, 420px);
     column-gap: 48px;
   }

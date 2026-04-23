@@ -10,7 +10,7 @@ const MEDIA_SVG = `
 
 function actionHtml(a) {
   const cls = a.variant === 'link' ? 'btn btn-link' : 'btn btn-outline';
-  return `<a class="${cls}" href="${a.href || '#'}">${a.label}</a>`;
+  return `<a class="${cls}" href="${a.href || '#giai-phap-son-an-toan'}">${a.label}</a>`;
 }
 
 function itemHtml(item, isActive) {
@@ -35,20 +35,25 @@ export function initVoc() {
   const panel = document.querySelector('[data-voc-panel]');
   if (!tabsRoot || !panel || !data.length) return;
 
-  let activeId = data[0].id;
+  const activeTab = tabsRoot.querySelector('.voc-tab.is-active');
+  let activeId = activeTab?.dataset.vocTab || data[0].id;
 
-  tabsRoot.innerHTML = data
-    .map(
-      (d) => `
-        <button type="button" role="tab"
-          class="voc-tab${d.id === activeId ? ' is-active' : ''}"
-          data-voc-tab="${d.id}"
-          aria-selected="${d.id === activeId ? 'true' : 'false'}">${d.tab}</button>
-      `
-    )
-    .join('');
+  if (!tabsRoot.children.length) {
+    tabsRoot.innerHTML = data
+      .map(
+        (d) => `
+          <button type="button" role="tab"
+            class="voc-tab${d.id === activeId ? ' is-active' : ''}"
+            data-voc-tab="${d.id}"
+            aria-selected="${d.id === activeId ? 'true' : 'false'}">${d.tab}</button>
+        `
+      )
+      .join('');
+  }
 
-  panel.innerHTML = data.map((d) => itemHtml(d, d.id === activeId)).join('');
+  if (!panel.children.length) {
+    panel.innerHTML = data.map((d) => itemHtml(d, d.id === activeId)).join('');
+  }
 
   function activate(id) {
     if (!data.find((d) => d.id === id)) return;
@@ -59,7 +64,9 @@ export function initVoc() {
       btn.setAttribute('aria-selected', on ? 'true' : 'false');
     });
     panel.querySelectorAll('.voc-item').forEach((el) => {
-      el.classList.toggle('is-active', el.dataset.vocItem === id);
+      const on = el.dataset.vocItem === id;
+      el.classList.toggle('is-active', on);
+      el.hidden = !on;
     });
   }
 

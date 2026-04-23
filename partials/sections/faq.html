@@ -1,15 +1,26 @@
-<section class="section faq-section" aria-labelledby="faq-heading">
+<section
+  id="faq-son-phong-be"
+  class="section faq-section"
+  aria-labelledby="faq-heading"
+>
   <div class="section-container">
     <div class="faq-grid">
       <div class="section-head">
         <span class="section-eyebrow">Câu hỏi</span>
-        <h2 id="faq-heading" class="section-title">Câu hỏi thường gặp</h2>
+        <h2 id="faq-heading" class="section-title">Câu hỏi thường gặp về sơn phòng em bé</h2>
         <p class="section-lead">
           Nếu bạn không tìm thấy câu trả lời ở đây, hãy nhắn với chúng tôi — mỗi câu hỏi từ cha mẹ
           đều quý giá.
         </p>
       </div>
-      <div class="faq-list" data-faq></div>
+      <div class="faq-list" data-faq>
+        {{#each faq}}
+        <details class="faq-item" {{#if @first}}open{{/if}}>
+          <summary>{{q}}</summary>
+          <div class="faq-answer">{{a}}</div>
+        </details>
+        {{/each}}
+      </div>
     </div>
   </div>
 </section>

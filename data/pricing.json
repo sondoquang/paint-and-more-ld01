@@ -1,7 +1,7 @@
 [
   {
     "name": "Cơ bản",
-    "price": { "r12": 0, "r18": 0 },
+    "price": { "r12": "$0", "r18": "$0" },
     "desc": { "r12": "cho phòng 12m²", "r18": "cho phòng 18m²" },
     "features": [
       "Sơn Keisoudo hấp thụ VOC",
@@ -12,8 +12,11 @@
   },
   {
     "name": "Toàn diện",
-    "price": { "r12": 19, "r18": 29 },
-    "desc": { "r12": "cho phòng 12m²", "r18": "cho phòng 18m²" },
+    "price": { "r12": "$19", "r18": "$29" },
+    "desc": {
+      "r12": "cho phòng 12m²",
+      "r18": "cho phòng 18m²"
+    },
     "features": [
       "Sơn Keisoudo hấp thụ VOC",
       "Lớp phủ Dura-Poxy bền",
@@ -23,8 +26,11 @@
   },
   {
     "name": "Bảo vệ không khí",
-    "price": { "r12": 29, "r18": 45 },
-    "desc": { "r12": "cho phòng 12m²", "r18": "cho phòng 18m²" },
+    "price": { "r12": "$29", "r18": "$45" },
+    "desc": {
+      "r12": "cho phòng 12m²",
+      "r18": "cho phòng 18m²"
+    },
     "features": [
       "Tư vấn thiết kế Japandi",
       "Hỗ trợ bảo trì ba năm",
@@ -35,8 +41,11 @@
   },
   {
     "name": "Điều hòa độ ẩm",
-    "price": { "r12": 49, "r18": 75 },
-    "desc": { "r12": "Bảo vệ không khí sạch", "r18": "Bảo vệ không khí sạch" },
+    "price": { "r12": "$49", "r18": "$75" },
+    "desc": {
+      "r12": "Bảo vệ không khí sạch",
+      "r18": "Bảo vệ không khí sạch"
+    },
     "features": [
       "Keisoudo hấp thụ VOC",
       "Dura-Poxy chống xước",

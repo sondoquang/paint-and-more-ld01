@@ -1,46 +1,78 @@
 [
   {
-    "id": "ho-hap",
-    "tab": "Hô hấp",
-    "eyebrow": "Giải pháp",
-    "title": "OneCoat for Kids",
-    "desc": "Phòng biết thở, lớn lên cùng bé từ 0 đến 6 tuổi.",
+    "id": "khong-khi-sach",
+    "tab": "Không khí sạch",
+    "eyebrow": "Giải pháp hô hấp",
+    "title": "Sơn an toàn cho phòng em bé giúp giảm VOC và mùi sơn",
+    "desc": "OneCoat for Kids kết hợp công thức gốc nước và lớp Keisoudo để hỗ trợ không khí sạch hơn trong không gian bé ngủ, chơi và lớn lên mỗi ngày.",
     "actions": [
-      { "label": "Tìm hiểu", "variant": "outline", "href": "#" },
-      { "label": "Tìm hiểu", "variant": "link", "href": "#" }
+      {
+        "label": "Xem công nghệ không khí sạch",
+        "variant": "outline",
+        "href": "#cong-nghe-son-an-toan"
+      },
+      {
+        "label": "Đọc FAQ về sơn phòng bé",
+        "variant": "link",
+        "href": "#faq-son-phong-be"
+      }
+    ]
+  },
+  {
+    "id": "it-mui",
+    "tab": "Ít mùi",
+    "eyebrow": "Thi công an tâm",
+    "title": "Hoàn thiện phòng bé với mùi sơn nhẹ và thời gian bàn giao nhanh",
+    "desc": "Quy trình thi công sạch giúp cha mẹ rút ngắn thời gian chờ, hạn chế cảm giác khó chịu sau sơn và sớm đưa bé trở lại không gian quen thuộc.",
+    "actions": [
+      {
+        "label": "Nhận tư vấn thi công an toàn",
+        "variant": "outline",
+        "href": "#lien-he-tu-van"
+      },
+      {
+        "label": "Xem bảng giá phòng bé",
+        "variant": "link",
+        "href": "#bang-gia-phong-be"
+      }
     ]
   },
   {
     "id": "sang-tao",
     "tab": "Sáng tạo",
-    "eyebrow": "Sức khỏe",
-    "title": "Bảo vệ mỗi hơi thở của bé",
-    "desc": "Keisoudo từ Nhật Bản hấp thụ những khí độc hại mà sơn thông thường phát tán. Nó là lá phổi của phòng, giúp không khí luôn sạch sẽ mỗi ngày.",
+    "eyebrow": "Không gian học tập",
+    "title": "Bề mặt để bé vẽ, viết và phát triển trí tưởng tượng mỗi ngày",
+    "desc": "Các khu vực chalkboard biến bức tường thành nơi học hỏi tự nhiên, để bé thoải mái sáng tạo mà vẫn dễ lau sạch sau giờ chơi.",
     "actions": [
-      { "label": "Tìm hiểu", "variant": "outline", "href": "#" },
-      { "label": "Khám", "variant": "link", "href": "#" }
+      {
+        "label": "Khám phá sản phẩm sáng tạo",
+        "variant": "outline",
+        "href": "#san-pham-son-an-toan"
+      },
+      {
+        "label": "Xem thiết kế phòng bé",
+        "variant": "link",
+        "href": "#thiet-ke-phong-be"
+      }
     ]
   },
   {
-    "id": "ben-vung",
-    "tab": "Bền vững",
-    "eyebrow": "Sáng tạo",
-    "title": "Lá phổi của phòng biết thở",
-    "desc": "Chalkboard cho phép bé vẽ, viết, và học hỏi thông qua chơi đùa. Tường trở thành công cụ sáng tạo, nơi tưởng tượng không có giới hạn.",
+    "id": "do-ben",
+    "tab": "Độ bền",
+    "eyebrow": "Bảo vệ lâu dài",
+    "title": "Lớp phủ bền đẹp cho những năm tháng vui chơi của trẻ nhỏ",
+    "desc": "Dura-Poxy giúp bề mặt chịu va chạm, chống trầy xước và dễ vệ sinh, phù hợp với nhịp sinh hoạt năng động của gia đình có con nhỏ.",
     "actions": [
-      { "label": "Tìm", "variant": "outline", "href": "#" },
-      { "label": "Khám", "variant": "link", "href": "#" }
-    ]
-  },
-  {
-    "id": "phat-trien",
-    "tab": "Phát triển",
-    "eyebrow": "Phát triển",
-    "title": "Tường cho sáng tạo và học tập",
-    "desc": "Dura-Poxy chịu đựng những năm tháng chơi đùa, bám dính, và vết bẩn. Bé có thể là chính mình mà không lo lắng về những vết xước.",
-    "actions": [
-      { "label": "Khám", "variant": "outline", "href": "#" },
-      { "label": "Tìm", "variant": "link", "href": "#" }
+      {
+        "label": "Tìm hiểu giá trị đầu tư dài hạn",
+        "variant": "outline",
+        "href": "#gia-tri-dau-tu"
+      },
+      {
+        "label": "Liên hệ tư vấn phòng bé",
+        "variant": "link",
+        "href": "#lien-he-tu-van"
+      }
     ]
   }
 ]
